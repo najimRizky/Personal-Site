@@ -9,7 +9,7 @@
       <div id="nav" style="color: white, font-size: 21px;">
         <router-link to="/home">About Me</router-link> | 
         <router-link to="/education">Education</router-link> | 
-        <router-link to="/experience">Experience</router-link>
+        <router-link to="/experience">Skill</router-link>
       </div>
       <hr>
     </div>
@@ -29,7 +29,10 @@ export default {
         return{
             mulai: true
         }
-    },
+  },
+  created:{
+
+  },
     methods: {
         lanjut2: function(lanjut2){
             this.mulai = lanjut2;
