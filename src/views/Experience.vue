@@ -5,7 +5,11 @@
       <div class="row text-center">
         <div class="col-md-6">
           <div id="rate">
-            <img src="@/assets/vue.png" >
+            <h5 id="bhs"><span v-if="hover" class="badge badge-secondary">Vue</span></h5>
+            <img id="Vue" src="@/assets/vue.png" 
+            @mouseover="hover = true"
+            @mouseleave="hover = false"
+            >
             <i class="fa fa-star" aria-hidden="true" style="color:yellow"></i>
             <i class="fa fa-star" aria-hidden="true" ></i>
             <i class="fa fa-star" aria-hidden="true" ></i>
@@ -13,7 +17,11 @@
             <i class="fa fa-star" aria-hidden="true" ></i>
           </div>
           <div id="rate">
-            <img src="@/assets/html.png" >
+            <h5 id="bhs"><span v-if="hover" class="badge badge-secondary">HTML</span></h5>
+            <img id="HTML" src="@/assets/html.png" 
+            @mouseover="hover = true"
+            @mouseleave="hover = false"
+            >
             <i class="fa fa-star" aria-hidden="true" style="color:yellow"></i>
             <i class="fa fa-star" aria-hidden="true" style="color:yellow"></i>
             <i class="fa fa-star" aria-hidden="true" style="color:yellow"></i>
@@ -21,7 +29,11 @@
             <i class="fa fa-star" aria-hidden="true" ></i>
           </div>
           <div id="rate">
-            <img src="@/assets/css.png" >
+            <h5 id="bhs"><span v-if="hover" class="badge badge-secondary">CSS</span></h5>
+            <img id="CSS" src="@/assets/css.png" 
+            @mouseover="hover = true"
+            @mouseleave="hover = false"
+            >
             <i class="fa fa-star" aria-hidden="true" style="color:yellow"></i>
             <i class="fa fa-star" aria-hidden="true" style="color:yellow"></i>
             <i class="fa fa-star" aria-hidden="true" style="color:yellow"></i>
@@ -31,7 +43,11 @@
         </div>
         <div class="col-md-6 ">
           <div id="rate">
-            <img src="@/assets/c.png" >
+            <h5 id="bhs"><span v-if="hover" class="badge badge-secondary">C</span></h5>
+            <img id="C" src="@/assets/c.png" 
+            @mouseover="hover = true"
+            @mouseleave="hover = false"
+            >
             <i class="fa fa-star" aria-hidden="true" style="color:yellow"></i>
             <i class="fa fa-star" aria-hidden="true" style="color:yellow"></i>
             <i class="fa fa-star" aria-hidden="true" style="color:yellow"></i>
@@ -39,7 +55,11 @@
             <i class="fa fa-star" aria-hidden="true" ></i>
           </div>
           <div id="rate">
-            <img src="@/assets/java.png" >
+            <h5 id="bhs"><span v-if="hover" class="badge badge-secondary">Java</span></h5>
+            <img id="Java" src="@/assets/java.png" 
+            @mouseover="hover = true"
+            @mouseleave="hover = false"
+            >
             <i class="fa fa-star" aria-hidden="true" style="color:yellow"></i>
             <i class="fa fa-star" aria-hidden="true" ></i>
             <i class="fa fa-star" aria-hidden="true" ></i>
@@ -47,7 +67,11 @@
             <i class="fa fa-star" aria-hidden="true" ></i>
           </div>
           <div id="rate">
-            <img src="@/assets/js.png" >
+            <h5 id="bhs"><span v-if="hover" class="badge badge-secondary">Javascript</span></h5>
+            <img id="Js" src="@/assets/js.png" 
+            @mouseover="hover = true"
+            @mouseleave="hover = false"
+            >
             <i class="fa fa-star" aria-hidden="true" style="color:yellow"></i>
             <i class="fa fa-star" aria-hidden="true" style="color:yellow"></i>
             <i class="fa fa-star" aria-hidden="true" ></i>
@@ -69,6 +93,11 @@ export default {
   components: { 
     Sosmed 
   },
+  data(){
+    return{
+      hover: false,
+    };
+  }
 }
 </script>
 
@@ -92,6 +121,10 @@ export default {
   }
   #rate{
     margin: 10px 0;
+  }
+  #bhs{
+    position: absolute;
+    text-align: right;
   }
 
 </style>>

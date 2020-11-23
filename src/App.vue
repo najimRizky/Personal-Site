@@ -53,10 +53,8 @@ export default {
   color: #e9e9e9;
   height: 100%;
   background-image: url('assets/background3.jpg');
-  background-position: bottom;
-  background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  background-repeat: repeat;
 }
 
 html,body{
