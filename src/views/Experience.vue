@@ -125,6 +125,7 @@ export default {
   #bhs{
     position: absolute;
     text-align: right;
+    transition: 0.3s;
   }
 
 </style>>
