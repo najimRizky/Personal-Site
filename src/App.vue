@@ -13,6 +13,7 @@
       </div>
       <hr>
     </div>
+    
     <router-view/>
   </div>
 </template>
@@ -30,17 +31,14 @@ export default {
             mulai: true
         }
   },
-  created:{
-
-  },
-    methods: {
-        lanjut2: function(lanjut2){
-            this.mulai = lanjut2;
-            console.log(this.mulai)
-            this.$router.push('home') 
-        }
-    }
   
+  methods: {
+    lanjut2: function(lanjut2){
+      this.mulai = lanjut2;
+      console.log(this.mulai)
+      this.$router.push('home') 
+    }
+  }
 }
 </script>
 
@@ -54,7 +52,9 @@ export default {
   height: 100%;
   background-image: url('assets/background3.jpg');
   background-size: cover;
+  background-attachment: scroll;
   background-repeat: repeat;
+  overflow-y: scroll;
 }
 
 html,body{
@@ -103,6 +103,8 @@ hr{
 #nav a.router-link-exact-active {
   color: #e6a900;
 }
+
+
 </style>
 
 

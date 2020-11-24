@@ -82,16 +82,19 @@
       </div>
     </div>
     <Sosmed/>
+    <Footer/>
   </div>
 
 </template>
 
 <script>
 import Sosmed from '@/components/Sosmed.vue'
+import Footer from '@/components/Footer.vue'
 
 export default {
   components: { 
-    Sosmed 
+    Sosmed,
+    Footer 
   },
   data(){
     return{
@@ -125,7 +128,5 @@ export default {
   #bhs{
     position: absolute;
     text-align: right;
-    transition: 0.3s;
   }
-
 </style>>
